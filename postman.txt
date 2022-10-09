@@ -1,0 +1,119 @@
+
+*******************************CollgeStudent****************************
+
+GET localhost:8080/collegestudent/list
+
+[
+    {
+        "sid": 1,
+        "sname": "pratiksha",
+        "deptname": "co",
+        "address": "pune",
+        "marks": 88,
+        "age": 22
+    },
+    {
+        "sid": 2,
+        "sname": "Atul",
+        "deptname": "It",
+        "address": "saswad",
+        "marks": 94,
+        "age": 23
+    }
+]
+***********************************************************************
+GET localhost:8080/collegestudent/findbyid/1
+
+{
+    "sid": 1,
+    "sname": "pratiksha",
+    "deptname": "co",
+    "address": "pune",
+    "marks": 88,
+    "age": 22
+}
+**********************************************************************
+POST localhost:8080/collegestudent/save
+{
+        "sid":3,
+        "sname": "harry",
+        "deptname": "It",
+        "address": "saswad",
+        "marks": 81,
+        "age": 23
+    }
+************************************************************************
+PUT localhost:8080/collegestudent/update
+{
+        "sid":3,
+        "sname": "aarti",
+        "deptname": "computer",
+        "address": "nasrapur",
+        "marks": 91,
+        "age": 23
+    }
+***********************************************************************
+DELETE localhost:8080/collegestudent/delete/1
+
+student_id deleted1
+
+************************************************************************
+
+*****************************CollegeStaff*******************************
+
+GET localhost:8080/collegestaff/list
+
+[
+    {
+        "staffid": 1,
+        "staffname": "pravin",
+        "staffdeptname": "co",
+        "address": "saswad",
+        "mobileno": 7654328765,
+        "salary": 60000.0
+    },
+    {
+        "staffid": 2,
+        "staffname": "tejal",
+        "staffdeptname": "It",
+        "address": "pune",
+        "mobileno": 8654328765,
+        "salary": 50000.0
+    }
+]
+
+***********************************************************************
+GET localhost:8080/collegestaff/findbyid/2
+
+{
+    "staffid": 2,
+    "staffname": "tejal",
+    "staffdeptname": "It",
+    "address": "pune",
+    "mobileno": 8654328765,
+    "salary": 50000.0
+}
+***********************************************************************
+POST localhost:8080/collegestaff/save
+{
+    "staffid": 3,
+    "staffname": "ketaki",
+    "staffdeptname": "It",
+    "address": "mumbai",
+    "mobileno": 9654328765,
+    "salary": 55000.0
+}
+*************************************************************************
+PUT localhost:8080/collegestaff/update
+{
+    "staffid": 2,
+    "staffname": "tejal",
+    "staffdeptname": "It",
+    "address": "nasarapur",
+    "mobileno": 8654328765,
+    "salary": 40000.0
+}
+***********************************************************************
+DELETE localhost:8080/collegestudent/delete/1
+
+staff_id deleted1
